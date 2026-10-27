@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "source": "hf",
+  "model": "Gemma4_31B_text_6l_prefill_b1_s2048_sdpa_math_bf16",
+  "patterns": [
+    "2c1e8b916325",
+    "3d3b76b2ce86",
+    "4fad7a65723a",
+    "510438572607",
+    "7bf48f6ad41f",
+    "7bf91bcadfc1",
+    "9f7aa9517aff",
+    "a0ab10b310aa",
+    "a33de122d32b",
+    "a5a5d0354ee8",
+    "aa77af8fcd54",
+    "c49863640f43",
+    "d1c6ce701eb2",
+    "d3c8742cb719",
+    "f21d70f01906",
+    "f7d2043cd67e"
+  ],
+  "graphs": [
+    "full_graph_000.py"
+  ],
+  "graph_metadata": {
+    "full_graph_000.py": "full_graph_000.meta.json"
+  },
+  "mode": "infer"
+}
