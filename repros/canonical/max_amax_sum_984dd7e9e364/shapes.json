@@ -1,0 +1,22 @@
+{
+  "points": [
+    {
+      "shape_hash": "a70a1bc2",
+      "models": {
+        "hf/infer/deepseek-ai/DeepSeek-V4-Flash-Base_layers1-4_b1_s512_bf16_grouped_mm": {
+          "occurrences": 1
+        }
+      },
+      "inputs": [
+        [[64,512,512],"bf16"],
+        [[1,512],"i64"],
+        [[64],"f32"],
+        ["S",[1,64,512,512]],
+        ["S",[1,-1,512,512]],
+        ["S",[1,-1,512,-1]],
+        ["S",[1,64,512,512]],
+        ["S",[64,512,512]]
+      ]
+    }
+  ]
+}

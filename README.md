@@ -20,9 +20,11 @@ Extracts fused kernel regions from real model compilations as lightweight, self-
 
 ## Corpus
 
-**1727 unique kernel patterns** deduplicated across 158 full models (torchbench, HuggingFace, timm; training + inference) plus 8 genai microbenchmarks. **358 full model graphs** retained.
+**1755 unique kernel patterns** deduplicated across 164 model/workload captures (torchbench, HuggingFace, timm, and genai; training + inference). **365 saved graphs** retained.
 
-A full all-shapes sweep runs in ~36 min across ~5K points (1727 patterns) on 4x B200.
+An earlier all-shapes sweep ran in ~36 min across ~5K points (1727 patterns) on 4x B200.
+
+[DeepSeek V4 Flash](docs/deepseek-v4-capture.md) is captured as a representative four-layer BF16 inference workload at batch 1, sequence 512, using native eager attention and grouped-MM experts. Its 28 patterns and 54 region occurrences describe that slice rather than full-depth model accounting.
 
 <details>
 <summary>Coverage breakdown</summary>
@@ -30,7 +32,7 @@ A full all-shapes sweep runs in ~36 min across ~5K points (1727 patterns) on 4x 
 | Suite | Captures | Mode |
 |-------|-------:|------|
 | torchbench | 50 | infer + train |
-| hf | 70 | infer + train |
+| hf | 71 | infer + train |
 | timm | 35 | infer + train |
 | genai | 8 | microbenchmarks (fwd + bwd) |
 

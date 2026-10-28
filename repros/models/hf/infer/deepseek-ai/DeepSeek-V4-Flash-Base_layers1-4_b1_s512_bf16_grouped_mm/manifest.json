@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "source": "hf",
+  "model": "deepseek-ai/DeepSeek-V4-Flash-Base_layers1-4_b1_s512_bf16_grouped_mm",
+  "patterns": [
+    "04cfc9fc1379",
+    "075485bd5e4a",
+    "13c9925c6dc5",
+    "1527efa5ddfb",
+    "15af05e51e9b",
+    "2deaf9ae2c03",
+    "36374350e8de",
+    "3f1f2ad3b0eb",
+    "433a68891c45",
+    "44ed9027e3e9",
+    "489e94b27ad3",
+    "4c380f1d9505",
+    "5aec53f5fcc7",
+    "66926215b4fd",
+    "68f0d314fcff",
+    "6c423007effe",
+    "7802e173c708",
+    "8080cdfa1561",
+    "879b08a1d451",
+    "984dd7e9e364",
+    "ae9a96032c90",
+    "b65807c00e97",
+    "b9e08b48d06c",
+    "bde316e587fa",
+    "e3a16695db77",
+    "ec7c8d065fa1",
+    "ef1a2c093511",
+    "f60562c047e0"
+  ],
+  "graphs": [
+    "full_graph_000.py"
+  ],
+  "graph_metadata": {
+    "full_graph_000.py": "full_graph_000.meta.json"
+  },
+  "mode": "infer"
+}
